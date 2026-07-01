@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Justice & Associates | Advocate Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.92);
+backdrop-filter:blur(8px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+z-index:1000;
+border-bottom:1px solid #333;
+}
+
+.logo{
+font-family:Cinzel;
+font-size:28px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.4s;
+}
+
+nav a:hover{
+color:#999;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+font-family:Cinzel;
+}
+
+.hero p{
+margin:25px auto;
+max-width:700px;
+color:#ddd;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 45px;
+border:2px solid white;
+color:white;
+text-decoration:none;
+margin-top:25px;
+transition:.4s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+section{
+padding:100px 9%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+font-family:Cinzel;
+margin-bottom:60px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+
+.card{
+
+background:#111;
+border:1px solid #222;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:white;
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat{
+padding:40px;
+background:#111;
+border:1px solid #222;
+}
+
+.stat h1{
+font-size:55px;
+}
+
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.box{
+background:#111;
+padding:40px;
+border:1px solid #222;
+transition:.3s;
+}
+
+.box:hover{
+background:white;
+color:black;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+transition:.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input,textarea{
+
+background:#111;
+border:1px solid #333;
+padding:18px;
+margin-bottom:20px;
+color:white;
+}
+
+button{
+padding:18px;
+background:white;
+color:black;
+border:none;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ccc;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+background:#111;
+}
+
+#top{
+position:fixed;
+right:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+color:black;
+border:none;
+cursor:pointer;
+display:none;
+font-size:20px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.contact{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">⚖ Justice</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Justice Begins With Truth</h1>
+
+<p>
+
+Experienced Civil & Criminal Lawyers providing trusted legal
+representation, consultation, litigation and dispute resolution
+with professionalism and integrity.
+
+</p>
+
+<a href="#contact" class="btn">Book Consultation</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h1 class="title">Practice Areas</h1>
+
+<div class="services">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h2>Civil Law</h2>
+
+<p>
+
+Property disputes, family matters,
+contract drafting, documentation,
+consumer complaints and legal consultation.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h2>Criminal Law</h2>
+
+<p>
+
+Bail matters, criminal defense,
+FIR assistance, legal representation,
+trial advocacy and appeals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Our Achievements</h1>
+
+<div class="stats">
+
+<div class="stat">
+<h1 class="counter" data-target="500">0</h1>
+<p>Cases Won</p>
+</div>
+
+<div class="stat">
+<h1 class="counter" data-target="15">0</h1>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h1 class="counter" data-target="1000">0</h1>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<h1 class="counter" data-target="98">0</h1>
+<p>Success Rate %</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Why Choose Us</h1>
+
+<div class="why">
+
+<div class="box">
+<h2>Confidential Advice</h2>
+<p>Every client receives complete confidentiality.</p>
+</div>
+
+<div class="box">
+<h2>Experienced Lawyers</h2>
+<p>Professional legal representation for every case.</p>
+</div>
+
+<div class="box">
+<h2>Affordable Consultation</h2>
+<p>Transparent pricing with expert guidance.</p>
+</div>
+
+<div class="box">
+<h2>24/7 Legal Support</h2>
+<p>Always available during urgent legal matters.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h1 class="title">Our Office</h1>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h1 class="title">Contact Us</h1>
+
+<div class="contact">
+
+<div>
+
+<h2>Need Legal Help?</h2>
+
+<p style="margin-top:20px;color:#bbb;line-height:2;">
+
+📞 +91 XXXXX XXXXX
+
+<br><br>
+
+📧 advocate@email.com
+
+<br><br>
+
+📍 New Delhi, India
+
+</p>
+
+</div>
+
+<form>
+
+<input placeholder="Your Name">
+
+<input placeholder="Email">
+
+<input placeholder="Phone">
+
+<textarea rows="6" placeholder="Describe your case"></textarea>
+
+<button>Send Inquiry</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Justice & Associates. All Rights Reserved.
+
+</footer>
+
+<button id="top">↑</button>
+
+<script>
+
+let counters=document.querySelectorAll(".counter");
+
+counters.forEach(counter=>{
+
+let update=()=>{
+
+let target=+counter.getAttribute("data-target");
+
+let count=+counter.innerText;
+
+let inc=target/150;
+
+if(count<target){
+
+counter.innerText=Math.ceil(count+inc);
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText=target;
+
+}
+
+}
+
+update();
+
+});
+
+let topBtn=document.getElementById("top");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
